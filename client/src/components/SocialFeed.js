@@ -1,9 +1,32 @@
 import React from 'react';
 
-const SocialFeed = ({ friends = [], stories = [] }) => {
-  if (!friends.length || !stories.length) {
-    return <p>Loading...</p>;
-  }
+// Test data
+const testFriends = [
+    {
+      name: 'John Doe',
+      photo: 'https://via.placeholder.com/50',
+    },
+    {
+      name: 'Jane Smith',
+      photo: 'https://via.placeholder.com/50',
+    },
+  ];
+  
+  const testStories = [
+    {
+      title: 'My First Post',
+      body: 'This is my first post. I am excited to share my thoughts and experiences with you!',
+    },
+    {
+      title: 'A Day at the Beach',
+      body: 'Yesterday, I spent the entire day at the beach with my friends. We had so much fun swimming and playing beach volleyball!',
+    },
+  ];
+  
+  const SocialFeed = ({ friends = testFriends, stories = testStories }) => {
+    if (!friends.length || !stories.length) {
+      return <p>Loading...</p>;
+    }
 
   return (
     <div className="social-feed-container">
