@@ -1,0 +1,24 @@
+/* src/components/SocialFeed.css */
+
+.social-feed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .friend-info img {
+    max-width: 50px;
+    height: auto;
+    margin-right: 15px;
+  }
+  
+  .story-container {
+    flex-grow: 1;
+    padding: 0 15px;
+  }
+  
+  .story-body {
+    overflow-y: auto;
+    max-height: 80px;
+  }
+  
