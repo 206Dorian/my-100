@@ -9,8 +9,7 @@ export default function Footer() {
           <div className="footer-title">
 
           </div>
-          <p className="footer-tagline">🦾We hope this *Lifted* your spirits!<var id="flipped">🦾</var></p>
-          {/* using the var element tag prevents errors, certain tags like div cant (or shouldnt be) be nested in a p tag. */}
+          <p className="footer-tagline"> made with 📖!</p>
         </div>
         <div className="footer-section-wrapper">
           <div className="footer-section">
@@ -31,7 +30,7 @@ export default function Footer() {
             </nav>
           </div>
           <div className="footer-section">
-            <h2 className="footer-category">Tip Us!</h2>
+
             <nav className="footer-list">
               <li>
 
@@ -42,9 +41,9 @@ export default function Footer() {
         </div>
         <div className="footer-bottom">
           <div className="footer-bottom-container">
-            <p className="footer-copyright">Ⓒ 2023 Last Ditch Effort</p>
+            <p className="footer-copyright">Ⓒ 2023 The Birch Barn</p>
             <div className="footer-social">
-           
+
             </div>
           </div>
         </div>

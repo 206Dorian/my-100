@@ -1,17 +1,18 @@
 const db = require('../config/connection');
-const { User, Book } = require('../models');
-const userData = require('./userData.json');
-const bookData = require('./bookData.json');
+
+const seedUsers = require('./seedUser');
+const seedStories = require('./seedStories');
+const seedFriends = require('./seedFriends');
 
 db.once('open', async () => {
 
-  await User.deleteMany({});
-  await Book.deleteMany({});
 
-  // bulk create each model
-  const users = await User.insertMany(userData);
-  const books = await Book.insertMany(bookData);
+  await seedUsers();
+  await seedStories();
+  await seedFriends();
+
 
   console.log('all done!');
+  console.log('All seeds complete');
   process.exit(0);
 });

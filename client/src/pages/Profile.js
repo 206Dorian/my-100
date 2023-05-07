@@ -1,36 +1,33 @@
+// src/pages/Profile.js
+
 import { Link } from "react-router-dom";
-// import UserInfo from "../components/UserInfo";
+import UserInfo from "../components/UserInfo";
 import { useState } from "react";
 import Auth from "../utils/auth";
+import BookSearch from "../components/BookSearch";
 
 export default function Profile() {
-  const [query, setQuery] = useState("")
+  const [query, setQuery] = useState("");
 
   return (
     <>
       {Auth.loggedIn() ? (
         <div>
-          <br></br>
           <div>
-            {/* <UserInfo /> */}
+            <Link to="/social-feed" className="social-feed-button">
+              Social Feed
+            </Link>
+            <UserInfo />
           </div>
           <div>
-            {/* FIRST Render MuscleGroups component with buttons by default
-            <MuscleGroups onQuery={setQuery} />
+            <BookSearch onQuery={setQuery} />
             <br></br>
-            {/* THEN Render Exercise component 10x from API call for button selected */}
-             {/* <Exercise query={query} /> */}
           </div>
         </div>
-
-
       ) : (
         <p>
-          You need to be logged in to view exercises. Please{' '}
-          <Link to="/">login</Link>
+          You need to be logged in. Please <Link to="/">login</Link>
         </p>
-
-
       )}
     </>
   );

@@ -1,6 +1,5 @@
 const { gql } = require('apollo-server-express');
-//how to specify the typedefs with arrays and objectslike workouts for users
-//add type defs for other queries... also add type defs for mutations? 
+
 const typeDefs = gql`
 type User {
   _id: ID
@@ -8,12 +7,19 @@ type User {
   email: String
   password: String
   age: String
-  height: String
-  weight: String
+  stories: [Story]
+  friends: [User]
  
 }
 
-
+type Story {
+    _id: ID
+    title: String
+    body: String
+    author: User
+    createdAt: String
+    updatedAt: String
+  }
 
 type Book {
   _id: ID
@@ -32,6 +38,8 @@ type Auth {
     user: User
     Books:[Book]
     me: User
+    Stories: [Story]
+    story(_id: ID!): Story
   }
 
 
@@ -40,7 +48,11 @@ type Auth {
     addUser(username: String!, email: String!, password: String!): Auth
     login(username: String!, password: String!): Auth
     deleteUser(username: String!): User
-    updateUser(height: String!, weight: String!, age: String!): User 
+    updateUser(height: String!, weight: String!, age: String!): User
+    createStory(title: String!, body: String!): Story
+    updateStory(_id: ID!, title: String, body: String): Story
+    deleteStory(_id: ID!): Story
+    addFriend(friendId: ID!): User 
   }
 
 `;
