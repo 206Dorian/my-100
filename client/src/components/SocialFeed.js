@@ -1,4 +1,6 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
+
 
 // Test data
 const testFriends = [
@@ -24,12 +26,19 @@ const testFriends = [
   ];
   
   const SocialFeed = ({ friends = testFriends, stories = testStories }) => {
+    const navigate = useNavigate(); // Create navigate object
+
+  const goToProfile = () => {
+    navigate('/profile'); // Navigate to profile page
+  };
+  
     if (!friends.length || !stories.length) {
       return <p>Loading...</p>;
     }
 
   return (
     <div className="social-feed-container">
+           <button onClick={goToProfile}>Back to Profile</button> 
       {friends.map((friend, index) => (
         <div key={index} className="friend-row">
           <div className="friend-info">
