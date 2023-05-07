@@ -1,6 +1,10 @@
 import React from 'react';
 
-const SocialFeed = ({ friends, stories }) => {
+const SocialFeed = ({ friends = [], stories = [] }) => {
+  if (!friends.length || !stories.length) {
+    return <p>Loading...</p>;
+  }
+
   return (
     <div className="social-feed-container">
       {friends.map((friend, index) => (
