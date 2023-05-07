@@ -33,7 +33,7 @@ export default function Login(props) {
   return (
     <>
       <div className="container my-1">
-        <form autocomplete="off" className="form-title" onSubmit={handleFormSubmit}>Login
+        <form autoComplete="off" className="form-title" onSubmit={handleFormSubmit}>Login
           <div className="flex-row space-between my-2">
             <label htmlFor="username">Username:</label>
             <input className="input-field"
