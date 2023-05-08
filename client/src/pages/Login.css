@@ -6,7 +6,7 @@
     --liteBlue: #3da5d9;
     --litePink: #eee5e9;
     --mikado: #fec601;
-    --pumpkin: #ea7656;
+    --sunrise: #eb9eb6;
     --verdigris: #73bfb8;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .form-title {
-    color: var(--pumpkin);
+    color: var(--sunrise);
 
     width: 100%;
     font-size: 6.66vw;
