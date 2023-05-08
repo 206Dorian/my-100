@@ -18,7 +18,8 @@
 }
 
 .form-title {
-    color: var(--deepPurp);
+    color: var(--pumpkin);
+
     width: 100%;
     font-size: 6.66vw;
     padding: 0;
