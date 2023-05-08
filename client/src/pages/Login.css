@@ -1,12 +1,12 @@
 :root {
     --chiliRed: #d64933;
     --deepBlue: #003c53;
-    --deepPurp: #242038;
+    --deepPurp: #6b6393;
     --greenBlue: #2364aa;
     --liteBlue: #3da5d9;
     --litePink: #eee5e9;
     --mikado: #fec601;
-    --pumpkin: #ea7317;
+    --pumpkin: #ea7656;
     --verdigris: #73bfb8;
 }
 
@@ -43,11 +43,11 @@
 }
 
 #username {
-    width: 50%;
+    width: 40%;
 }
 
 #pwd {
-    width: 50%;
+    width: 40%;
 }
 
 .error-text {
