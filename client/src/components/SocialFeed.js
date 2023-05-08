@@ -1,44 +1,48 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
-
+import { useNavigate } from 'react-router-dom';
 
 // Test data
 const testFriends = [
-    {
-      name: 'John Doe',
-      photo: 'https://via.placeholder.com/50',
-    },
-    {
-      name: 'Jane Smith',
-      photo: 'https://via.placeholder.com/50',
-    },
-  ];
-  
-  const testStories = [
-    {
-      title: 'My First Post',
-      body: 'This is my first post. I am excited to share my thoughts and experiences with you!',
-    },
-    {
-      title: 'A Day at the Beach',
-      body: 'Yesterday, I spent the entire day at the beach with my friends. We had so much fun swimming and playing beach volleyball!',
-    },
-  ];
-  
-  const SocialFeed = ({ friends = testFriends, stories = testStories }) => {
-    const navigate = useNavigate(); // Create navigate object
+  {
+    name: 'John Doe',
+    photo: 'https://via.placeholder.com/50',
+  },
+  {
+    name: 'Jane Smith',
+    photo: 'https://via.placeholder.com/50',
+  },
+];
 
+const testStories = [
+  {
+    title: 'My First Post',
+    body: 'This is my first post. I am excited to share my thoughts and experiences with you!',
+  },
+  {
+    title: 'A Day at the Beach',
+    body: 'Yesterday, I spent the entire day at the beach with my friends. We had so much fun swimming and playing beach volleyball!',
+  },
+];
+
+const SocialFeed = ({ friends = testFriends, stories = testStories }) => {
+  const navigate = useNavigate(); // Create navigate object
+
+  // Function to navigate to the profile page
   const goToProfile = () => {
-    navigate('/profile'); // Navigate to profile page
+    navigate('/profile');
   };
-  
-    if (!friends.length || !stories.length) {
-      return <p>Loading...</p>;
-    }
+
+  // Render loading message if friends or stories are empty
+  if (!friends.length || !stories.length) {
+    return <p>Loading...</p>;
+  }
 
   return (
     <div className="social-feed-container">
-           <button onClick={goToProfile}>Back to Profile</button> 
+      {/* Add button to go back to profile page */}
+      <button onClick={goToProfile}>Back to Profile</button>
+
+      {/* Map over friends and stories to display content */}
       {friends.map((friend, index) => (
         <div key={index} className="friend-row">
           <div className="friend-info">

@@ -2,12 +2,12 @@
 
 import { Link } from "react-router-dom";
 import UserInfo from "../components/UserInfo";
-import { useState } from "react";
+// import { useState } from "react";
 import Auth from "../utils/auth";
-import BookSearch from "../components/BookSearch";
+// import BookSearch from "../components/BookSearch";
 
 export default function Profile() {
-  const [query, setQuery] = useState("");
+  // const [query, setQuery] = useState("");
 
   return (
     <>
@@ -20,7 +20,7 @@ export default function Profile() {
             <UserInfo />
           </div>
           <div>
-            <BookSearch onQuery={setQuery} />
+            {/* <BookSearch onQuery={setQuery} /> */}
             <br></br>
           </div>
         </div>
