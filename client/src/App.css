@@ -1,13 +1,13 @@
 :root {
-  --chiliRed: #d64933;
   --deepBlue: #003c53;
-  --deepPurp: #242038;
-  --greenBlue: #2364aa;
-  --liteBlue: #3da5d9;
-  --litePink: #eee5e9;
-  --mikado: #fec601;
-  --pumpkin: #ea7317;
-  --verdigris: #73bfb8;
+  --deepCurrent: #006D77;
+  --tiffBlue: #83C5BE;
+  --iceBlue: #EDF6F9;
+  --white: #FFFFFF;
+  --black: #000000;
+  --sunrise: #FFDDD2;
+  --tangerine: #E29578;
+  --red: #FF0000;
 }
 
 .App {
@@ -18,19 +18,18 @@
 }
 
 body {
-  background-image: linear-gradient(var(--litePink),
-      var(--liteBlue),
-      rgb(116, 119, 119),
-      var(--deepPurp));
+  background-image: linear-gradient(var(--deepBlue),
+      var(--iceBlue),
+      var(--deepCurrent));
 }
 
 div#root {
   display: flex-box;
   flex-direction: row-reverse;
   padding: 50px;
-  background-color: var(--greenBlue);
+  background-color: var(--tiffBlue);
   box-sizing: border-box 30px;
-  border: 10px solid var(--deepBlue);
+  border: 10px solid var(--deepCurrent);
   font-size: 40px;
   text-align: center;
   display: center;
@@ -44,9 +43,9 @@ form {
   display: flex-box;
   flex-direction: row-reverse;
   padding: 50px;
-  background-color: var(--liteBlue);
+  background-color: var(--iceBlue);
   box-sizing: border-box 30px;
-  border: 10px solid var(--deepPurp);
+  border: 10px solid var(--deepBlue);
   font-size: 33px;
   text-align: center;
   display: center;
@@ -60,7 +59,7 @@ button {
   display: flex-box;
 
   text-align: center;
-  color: var(--litePink);
+  color: var(--red);
   background-color: var(--deepBlue);
   color: #ffffff;
 
@@ -75,7 +74,7 @@ button:active {
 button:hover,
 btn:active {
   color: var(--deepBlue);
-  background: var(--litePink);
+  background: var(--tangerine);
 }
 
 container {

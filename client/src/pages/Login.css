@@ -1,13 +1,14 @@
 :root {
-    --chiliRed: #d64933;
     --deepBlue: #003c53;
-    --deepPurp: #6b6393;
-    --greenBlue: #2364aa;
-    --liteBlue: #3da5d9;
-    --litePink: #eee5e9;
-    --mikado: #fec601;
-    --sunrise: #eb9eb6;
-    --verdigris: #73bfb8;
+    --deepCurrent: #006D77;
+    --tiffBlue: #83C5BE;
+    --iceblue: #EDF6F9;
+    --white: #FFFFFF;
+    --black: #000000;
+    --sunrise: #FFDDD2;
+    --tangerine: #E29578;
+    --red: #FF0000;
+
 }
 
 .container {
@@ -18,7 +19,7 @@
 }
 
 .form-title {
-    color: var(--sunrise);
+    color: var(--deepCurrent);
 
     width: 100%;
     font-size: 6.66vw;

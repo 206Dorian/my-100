@@ -23,6 +23,12 @@ export default function Footer() {
               </li>
 
               <li>
+                <a href="https://github.com/jsalexan" className="footer-link">
+                  Jennifer Alexander
+                </a>
+              </li>
+
+              <li>
                 <a href="https://github.com/206Dorian" className="footer-link">
                   Dorian Birch
                 </a>
