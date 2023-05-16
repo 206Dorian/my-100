@@ -1,7 +1,7 @@
 :root {
   --deepBlue: #003c53;
   --deepCurrent: #006D77;
-  --tiffBlue: #83C5BE;
+  --mintyfresh: #83C5BE;
   --iceBlue: #EDF6F9;
   --white: #FFFFFF;
   --black: #000000;
@@ -26,15 +26,15 @@ body {
 div#root {
   display: flex-box;
   flex-direction: row-reverse;
-  padding: 50px;
-  background-color: var(--tiffBlue);
-  box-sizing: border-box 30px;
+  padding: 40px;
+  background-color: var(--mintyfresh);
+  box-sizing: border-box 20px;
   border: 10px solid var(--deepCurrent);
-  font-size: 40px;
+  font-size: 20px;
   text-align: center;
   display: center;
   margin: auto;
-  width: 66%;
+  width: 60%;
   height: 60%;
   padding: 50px;
 }
@@ -46,7 +46,7 @@ form {
   background-color: var(--iceBlue);
   box-sizing: border-box 30px;
   border: 10px solid var(--deepBlue);
-  font-size: 33px;
+  font-size: 23px;
   text-align: center;
   display: center;
   margin: auto;
