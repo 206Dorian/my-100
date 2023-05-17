@@ -20,13 +20,13 @@
 body {
   background-image: linear-gradient(var(--deepBlue),
       var(--iceBlue),
-      var(--deepCurrent));
+      var(--deepBlue));
 }
 
 div#root {
   display: flex-box;
   flex-direction: row-reverse;
-  padding: 40px;
+  padding: 30px;
   background-color: var(--mintyfresh);
   box-sizing: border-box 20px;
   border: 10px solid var(--deepCurrent);
@@ -34,7 +34,7 @@ div#root {
   text-align: center;
   display: center;
   margin: auto;
-  width: 60%;
+  width: 50%;
   height: 60%;
   padding: 50px;
 }
@@ -50,7 +50,7 @@ form {
   text-align: center;
   display: center;
   margin: auto;
-  width: 60%;
+  width: 70%;
   height: 60%;
   padding: 50px;
 }
